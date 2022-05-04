@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>template - genderdelendaest</title>
+      <link rel="stylesheet" href="/style/style.css">
+   </head>
+   <body>
+      <header>
+         <div class="title">
+            <img src="/imgs/foxlogo.png" alt="an image of a low-poly fox">
+            <h1 id="site-title">Gender Delenda Est</h1>
+         </div>
+         <ul>
+            <li><a href="/" title="homepage">home</a></li>
+            <li><a href="/src/about.html" title="about me">about</a></li>
+            <li><a href="/src/academic.html" title="academic">academic</a></li>
+            <li><a href="/src/projects.html" title="projects">projects</a></li>
+         </ul>
+      </header>
+      <div class="page-container">
+         <div class="main-container-text">
+            <main class="text">
+               <section>
+                  <h1>What Was RIPscrip?</h1>
+                  <div class="annotated">
+                     <p><abbr title="Remote Imaging Protocol">RIP</abbr> was a graphics scripting language developed primarily for use on <abbr title="Bullitin Board System">BBSs</abbr> in the mid 1990s. It's a vector-graphics system, so should be pretty familiar in its functionality to anyone who's worked with <abbr title="Scalable Vector Graphics">SVGs</abbr>.</p>
+                     <aside>
+                        The folks a Wikipedia have <a href="https://en.wikipedia.org/wiki/Remote_Imaging_Protocol">an article</a> on RIPscrip if you want more details on the history. I'd also recommend John Kwasnik's <a href="http://www.kwasstuff.altervista.org/RIP/">page on the subject</a>.
+                     </aside>
+                  </div>
+                  <p>Given my proclivity for all things 90s and kinda broken, it should be unsurprising that after discovering it I quickly decided I wanted a good way to look at (and maybe even work with) RIPscrip files. Unfortunately, other than one freeware <abbr title="Microsoft Disk Operating System">MS-DOS</abbr> viewing program, very little seems to be readily available in terms of RIP software.</p>
+                  <p>I started having a chat with Autumn about this adn we decided to try and throw together something that would run natively on modern architectures & operating systems that would let us look at RIP images.</p>
+               </section>
+               <section>
+                  <h3>Design Requirements</h3>
+                  <p>The brief for this one is pretty simple: write a <abbr title="Free and Open Source Software">FOSS</abbr> parser/viewer for RIPscrip. We're aiming for this to render these images as close to their original form as possible, including animation timings and, if possible, support for the ANSI music output.</p>
+                  <h3>Build Environment</h3>
+                  <p>After a bit of back and forth, we settled on a Rust/SDL basis for the software. We've started work on a parser using the <a href="https://docs.rs/nom/latest/nom/index.html" title="nom crate docs">nom parser library</a>.</p>
+               </section>
+               <section>
+                  <p>That's all for now--I'll update more here when we've made some progress!</p>
+               </section>
+            </main>
+         </div>
+      </div>
+      <footer>
+         <a role="button" href="#site-title" class="topbutton">go to top</a>
+      </footer>
+   </body>
+</html>

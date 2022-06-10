@@ -2,7 +2,7 @@ body {
    background-color: #000;
 }
 
-p, ul, dl, ol {
+pre, p, ul, dl, ol {
    color: #0F0;
    font-family: "Courier New", monospace;
 }
